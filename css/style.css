@@ -7,13 +7,10 @@ body {
   font-size: 21px;
   font-family: serif;
   margin: 8px;
-
 }
 
 div {
-  float: left;
-  margin: 3% 0;
-  width: 100%;
+  margin: 3% 12%;
 }
 
 .container {
@@ -21,7 +18,7 @@ div {
   width: 375px;
   height: 667px;
   background-color: #E5E5E5;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .heading{
@@ -29,46 +26,94 @@ div {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
-  margin: 0% 0% 5% 10%;
+  margin: 0% 0% 5% 15%;
   letter-spacing: 2px;
 }
 
 h1 {
-padding: 36px 0px 0px 36px;
+padding: 28px 0px 0px 21px;
+}
+
+.preview {
+  width: 75%;
+  height: 215px;
 }
 
 .baku {
-  width: 375px;
-  height: 215px;
   background: url("../images/baku.jpg") #dadada no-repeat left top;
   background-size: 100%;
 }
 
 .london {
-  width: 375px;
-  height: 215px;
   background: url("../images/london.png") #dadada no-repeat left top;
   background-size: 100%;
 }
 
 .madrid {
-  width: 375px;
-  height: 215px;
   background: url("../images/madrid.jpg") #dadada no-repeat left top;;
   background-size: 100%;
 }
 
 .rome {
-  width:375px;
-  height:215px;
   background: url("../images/rome.jpg") #dadada no-repeat left top;
   background-size: 100%;
 }
 
 @media screen and (min-width: 575px){
 
-.container{
-  column-count: 2;
+.container {
+   width: 768px;
+   height: 1024px;
+ }
+ div{
+margin: 1% 2%;
+ }
+ .heading{
+   margin: 5% 0% 5% 20%;
+   font-size: 14px;
+ }
+
+h1 {
+padding: 16px 16px 16px 24px;
+font-size: 32px;
+}
+.preview{
+  width: 44%;
+  display: block;
+}
+.london{
+  float: left;
+}
+.rome{
+  float: left;
+}
+.madrid{
+  float: right;
+}
+.baku{
+  float: right;
+}
 }
 
-/*
+@media screen and (min-width: 1199px){
+  .container{
+       width: 1215px;
+       height: 861px;
+     }
+  div{
+    margin: 0% 4% 2% 1%;
+}
+.preview{
+  width: 20%;
+}
+.madrid {
+  float: left;
+}
+
+.baku{
+  float:left;
+}
+
+  }
+
+}
